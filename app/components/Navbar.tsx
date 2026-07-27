@@ -10,7 +10,7 @@ export default class Navbar extends React.Component {
 
     render(){
         return(
-            <div className="flex items-center justify-between w-full h-15 mt-10">
+            <div className="container mx-auto flex items-center justify-between w-full h-15 mt-10">
                 <div className="flex items-center gap-10">
                     {/* logo */}
                     <div className="flex items-center">

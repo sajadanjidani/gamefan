@@ -8,8 +8,8 @@ export default class Header extends React.Component {
 
     render(){
         return(
-            <header>
-                
+            <header className="h-dvh">
+                <img alt="backgroundImage" src={'./images/bgHeader.jpg'} className="w-full h-full object-fill opacity-10 mt-5"/>
             </header>
         )
     }
