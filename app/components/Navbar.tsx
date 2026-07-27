@@ -1,5 +1,7 @@
 'use client'
 import React from "react"
+import { IoSearch } from "react-icons/io5";
+
 
 export default class Navbar extends React.Component {
     constructor(props){
@@ -28,9 +30,9 @@ export default class Navbar extends React.Component {
                     <li>Contact Us</li>
                 </ul>
                 {/* search */}
-                <form>
-                    <input type="submit"/>
-                    <input type="text" />
+                <form className="flex items-center gap-3 px-4 py-2 bg-white/10 rounded-4xl">
+                    <IoSearch className="size-5"/>
+                    <input className="outline-0" type="text" placeholder="Search ..."/>
                 </form>
             </div>
         )
