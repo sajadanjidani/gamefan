@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
 
     render(){
         return(
-            <div className="w-full h-15 mt-10">
+            <div className="flex items-center gap-10 w-full h-15 mt-10">
                 {/* logo */}
                 <div className="flex items-center">
                     <img className="w-15 h-15" alt="logoIcon" src={'./images/logo.png'}/>
@@ -19,13 +19,13 @@ export default class Navbar extends React.Component {
                     </h1>
                 </div>
                 {/* list */}
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul className="flex gap-8 *:font-semibold *:hover:cursor-pointer *:hover:text-blue-300">
+                    <li className="text-blue-300">Home</li>
+                    <li>Games</li>
+                    <li>Console Games</li>
+                    <li>Gift Carts</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
                 </ul>
                 {/* search */}
                 <form>
