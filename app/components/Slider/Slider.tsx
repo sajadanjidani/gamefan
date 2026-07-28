@@ -1,7 +1,7 @@
 'use client'
 import React from "react"
 // component
-
+import SliderItem from "./components/Slider/SliderItem"
 // icons
 import { IoChevronBackOutline } from "react-icons/io5";
 import { IoChevronForward } from "react-icons/io5";
@@ -27,7 +27,7 @@ export default class Slider extends React.Component {
                 </div>
                 {/* slider side */}
                 <div className="w-full h-full flex gap-10 overflow-hidden flex-nowrap">
-                    
+                    <SliderItem />
                 </div>
             </section>
         )
