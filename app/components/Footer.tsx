@@ -1,5 +1,13 @@
 'use client'
 import React from "react"
+// icons
+import { SlSocialInstagram } from "react-icons/sl";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitch } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 export default class Footer extends React.Component {
     constructor(props){
@@ -8,8 +16,44 @@ export default class Footer extends React.Component {
 
     render(){
         return(
-            <footer>
-                
+            <footer className="h-100 mt-50 relative">
+                {/* border and shadow */}
+                <div className="w-full h-0.5 absolute bg-linear-90 from-blue-400 to-purple-400">
+                    <div className="absolute -top-0.5 w-full h-1 bg-linear-90 from-blue-600 to-purple-700 blur-lg"></div>
+                </div>
+                {/* content */}
+                <div className="w-full h-full flex justify-center items-center">
+                    <div className="w-5/10 h-7/10 flex flex-col">
+                        <div className="flex justify-center items-center">
+                            <img className="w-15 h-15" alt="logoImage" src='./images/logo.png' />
+                            <h2 className="-ml-10 font-bold lg:text-3xl md:text-lg sm:text-xl text-xl">
+                                <span className="text-blue-400">Ga</span>
+                                <span className="text-purple-400">me</span>
+                                <span className="text-purple-500">Fan</span>
+                            </h2>
+                        </div>
+                        <div>
+                            <ul className="flex mt-5 justify-center items-center">
+                                <li className="border-r-2 px-4 border-white hover:cursor-pointer hover:text-blue-400">Support</li>
+                                <li className="border-r-2 px-4 border-white hover:cursor-pointer hover:text-blue-400">contact us</li>
+                                <li className="border-r-2 px-4 border-white hover:cursor-pointer hover:text-blue-400">Terms and conditions of use</li>
+                                <li className="px-4 hover:cursor-pointer hover:text-blue-400">Frequently asked questions</li>
+                            </ul>
+                        </div>
+                        <div className="flex justify-center items-center gap-10 my-10 *:size-7 *:hover:cursor-pointer">
+                            <SlSocialInstagram className="hover:text-purple-400"/>
+                            <FaFacebook className="hover:text-blue-700"/>
+                            <FaTwitter className="hover:text-blue-400"/>
+                            <FaLinkedin className="hover:text-blue-700"/>
+                            <FaTwitch className="hover:text-purple-700"/>
+                            <FaWhatsapp className="hover:text-green-400"/>
+                        </div>
+                        <div className="text-center">
+                            <p>This is a practice project created by <a className="text-blue-400 hover:text-purple-400" href="https://github.com/sajadanjidani">me</a>.</p>
+                            <p className="mt-2">Create in 2026/7/28</p>
+                        </div>
+                    </div>
+                </div>
             </footer>
         )
     }

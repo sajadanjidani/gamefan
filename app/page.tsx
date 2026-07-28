@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import DownloadBox from "./components/DownloadBox";
 import Slider from "./components/Slider/Slider"
 import ADS from "./components/ADS";
-
+import Footer from "./components/Footer"
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
       <ADS />
       <Slider catrgoryTitle='Action Games'/>
       <Slider catrgoryTitle='Shooting Games'/>
+      <Footer />
     </div>
   );
 }
