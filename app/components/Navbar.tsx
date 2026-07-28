@@ -33,7 +33,7 @@ export default class Navbar extends React.Component<{}, NavbarState> {
             <img
               className="lg:w-15 lg:h-15 md:w-13 md:h-13 sm:w-12 sm:h-12 w-10 h-10"
               alt="logoIcon"
-              src="./images/logo.png"
+              src="./images/logo.webp"
             />
             <h1 className="font-bold lg:text-3xl md:text-lg sm:text-xl text-xl">
               <span className="text-blue-400">Ga</span>

@@ -45,7 +45,7 @@ export default class Header extends React.Component<{}, HeaderState> {
           >
             <img
               alt="imageCover"
-              src="./images/gameCovers/CyberpunkCover.jpg"
+              src="./images/gameCovers/CyberpunkCover.webp"
               className="w-9/10 h-9/10 mx-auto overflow-hidden rounded-md shadow-2xl shadow-purple-800"
             />
           </div>

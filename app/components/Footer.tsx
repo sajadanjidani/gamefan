@@ -29,7 +29,7 @@ export default class Footer extends React.Component {
               <img
                 className="w-15 h-15"
                 alt="logoImage"
-                src="./images/logo.png"
+                src="./images/logo.webp"
               />
 
               <h2 className="-ml-10 font-bold text-3xl">
