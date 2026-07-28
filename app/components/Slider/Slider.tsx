@@ -33,7 +33,7 @@ export default class Slider extends React.Component {
             <section className="container mx-auto h-60 mb-30">
                 {/* top side */}
                 <div className="w-full h-20 flex justify-between items-center">
-                    <h3 className="text-2xl font-bold">Updated Games</h3>
+                    <h3 className="text-2xl font-bold">{this.props.catrgoryTitle}</h3>
                     <div className="w-60 h-3/5 gap-5 flex justify-center items-center">
                         <span className="text-purple-400 text-shadow-lg text-shadow-purple-900 hover:cursor-pointer hover:text-blue-400 hover:text-shadow-blue-900">Show More</span>
                         <div className="flex justify-center items-center gap-2">

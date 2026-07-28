@@ -11,10 +11,10 @@ export default function Home() {
       <Navbar />
       <Header />
       <DownloadBox />
-      <Slider />
-      <Slider />
-      <Slider />
-      <Slider />
+      <Slider catrgoryTitle='Updated Games'/>
+      <Slider catrgoryTitle='Favorite Games'/>
+      <Slider catrgoryTitle='Action Games'/>
+      <Slider catrgoryTitle='Shooting Games'/>
     </div>
   );
 }
