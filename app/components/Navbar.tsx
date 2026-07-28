@@ -55,7 +55,7 @@ export default class Navbar extends React.Component {
                     )}
                     {this.state.menuStatus ? (
                     <div>
-                        <div className="absolute left-0 top-0 w-2/3 h-dvh bg-blue-950">
+                        <div className="fixed z-50 left-0 top-0 w-2/3 h-dvh bg-blue-950">
                             <ul className="*:font-semibold *:hover:cursor-pointer *:hover:text-blue-300 ml-3 mt-3 *:mt-3">
                                 <li className="text-blue-300">Home</li>
                                 <li>Games</li>
@@ -69,7 +69,7 @@ export default class Navbar extends React.Component {
                                 <input id="Navbar-input" className="outline-0 ml-3 w-9/10" type="text" placeholder="Search ..."/>
                             </form>
                         </div>
-                        <div className="absolute right-0 top-0 w-1/3 h-dvh bg-blue-900/20" onClick={this.menuHandler.bind(this)}></div>
+                        <div className="fixed z-50 right-0 top-0 w-1/3 h-dvh bg-blue-900/30" onClick={this.menuHandler.bind(this)}></div>
                     </div>
                     ) : ''}
                 </div>

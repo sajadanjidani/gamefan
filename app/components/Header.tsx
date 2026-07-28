@@ -17,15 +17,17 @@ export default class Header extends React.Component {
 
     render(){
         return(
-            <header className="h-dvh mt-5 relative">
+            <header className="md:h-dvh py-10 mt-5 relative">
                 {/* bgImage */}
-                <img alt="backgroundImage" src={'./images/bgHeader.jpg'} className="w-full h-full object-fill opacity-10 absolute -z-10"/>
+                <img alt="backgroundImage" src={'./images/bgHeader.jpg'} className="w-full h-full object-fill opacity-10 absolute -z-10 sm:-mt-3"/>
                 {/* content */}
-                <div className="h-full md:flex ">
-                    <div className="lg:w-2/6 md:w-1/2 sm:w-2/3 w-full mx-auto md:mx-0 sm:mx-auto h-full sm:ml-10 flex justify-center items-center">
-                        <img alt="imageCover" src={'./images/gameCovers/CyberpunkCover.jpg'} className="w-9/10 h-9/10 overflow-hidden rounded-md shadow-2xl shadow-purple-800" />
+                <div className="h-full md:flex grid">
+                    {/* cover */}
+                    <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/6 md:mx-0 mx-auto h-full sm:ml-10 md:flex md:justify-center md:items-center">
+                        <img alt="imageCover" src={'./images/gameCovers/CyberpunkCover.jpg'} className="w-9/10 h-9/10 overflow-hidden rounded-md shadow-2xl shadow-purple-800 mx-auto" />
                     </div>
-                    <div className="flex justify-center items-center md:w-4/6 w-full h-full md:**:text-left **:text-center md:**:mx-0 **:mx-auto">
+                    {/* info */}
+                    <div className="flex justify-center items-center md:w-4/6 w-full h-full sm:mt-0 mt-5 md:**:text-left **:text-center md:**:mx-0 **:mx-auto">
                         <div className="grid grid-rows-2 sm:w-4/5 w-4/5 md:gap-0 sm:gap-5 gap-3 lg:mt-0 md:-mt-15">
                             <h2 className="text-5xl font-bold lg:mb-0 md:mb-3">CyberPunk</h2>
                             <div className="flex justify-end items-center gap-3">

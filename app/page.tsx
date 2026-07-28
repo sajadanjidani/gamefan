@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      {/* <DownloadBox /> */}
+      <DownloadBox />
     </div>
   );
 }
