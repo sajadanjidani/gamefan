@@ -1,9 +1,18 @@
 'use client'
 import React from "react"
+// component
+import CategoryBtn from "./CategoryBtn"
 
 export default class Header extends React.Component {
     constructor(props){
         super(props)
+
+        this.state = {
+            CategoryInfo : [
+                {id : 1 , title : 'FBS'},
+                {id : 2 , title : 'Action'},
+            ]
+        }
     }
 
     render(){
@@ -20,8 +29,7 @@ export default class Header extends React.Component {
                         <div className="grid grid-rows-2 w-4/5">
                             <h2 className="text-5xl font-bold">CyberPunk</h2>
                             <div className="flex justify-end items-center gap-3">
-                                <div className="py-1 px-4 border-2 rounded-3xl font-semibold border-white">FBS</div>
-                                <div className="py-1 px-4 border-2 rounded-3xl font-semibold border-white">Action</div>
+                                {this.state.CategoryInfo.map(category => <CategoryBtn key={category.id} {...category} /> )}
                             </div>
                             <p className="leading-7 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nemo velit vero aliquid, culpa odio dolore quae molestiae facere nisi aliquam ratione perferendis magnam consequuntur tenetur, non dolorum placeat est. Iure fugit magnam corporis? Dolores!</p>
                             <div className="relative">
