@@ -12,6 +12,9 @@ export default function Home() {
       <Header />
       <DownloadBox />
       <Slider />
+      <Slider />
+      <Slider />
+      <Slider />
     </div>
   );
 }
