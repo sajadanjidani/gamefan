@@ -24,9 +24,27 @@ export default class Slider extends React.Component {
                 {id : 10 , title : 'MineCraft' , imageSrc : './images/gameCovers/MineCraft.jpg'},
                 {id : 11 , title : 'Fortnite' , imageSrc : './images/gameCovers/Fortnigt.jpg'},
                 {id : 12 , title : 'CSgo' , imageSrc : './images/gameCovers/CSgo.jpg'},
-            ]
+            ],
+            translateX: 0
         }
     }
+
+    nextHandler = () => {
+        console.log(this.state.translateX)
+        if(this.state.translateX <= 1220){
+            this.setState((prevState) => ({
+            translateX: prevState.translateX + 220,
+            }));
+        }
+    };
+
+    backHandler = () => {
+        if(this.state.translateX){
+            this.setState((prevState) => ({
+            translateX: prevState.translateX - 220,
+            }));
+        }
+    };
 
     render(){
         return(
@@ -37,14 +55,18 @@ export default class Slider extends React.Component {
                     <div className="w-60 h-3/5 sm:gap-5 gap-2 flex justify-end items-center">
                         <span className="text-purple-400 text-shadow-lg text-shadow-purple-900 hover:cursor-pointer hover:text-blue-400 hover:text-shadow-blue-900 sm:text-base text-sm">Show More</span>
                         <div className="flex justify-center items-center gap-2">
-                            <button className="px-2 py-2 rounded-md bg-gray-600 hover:bg-gray-500 hover:cursor-pointer"><IoChevronBackOutline /></button>
-                            <button className="px-2 py-2 rounded-md bg-gray-600 hover:bg-gray-500 hover:cursor-pointer"><IoChevronForward /></button>
+                            <button className="px-2 py-2 rounded-md bg-gray-600 hover:bg-gray-500 hover:cursor-pointer" onClick={this.backHandler.bind(this)}><IoChevronBackOutline /></button>
+                            <button className="px-2 py-2 rounded-md bg-gray-600 hover:bg-gray-500 hover:cursor-pointer" onClick={this.nextHandler.bind(this)}><IoChevronForward /></button>
                         </div>
                     </div>
                 </div>
                 {/* slider side */}
-                <div className="w-full h-auto flex gap-10 overflow-x-hidden flex-nowrap">
-                    {this.state.games.map(game => <SliderItem key={game.id} {...game}/>)}
+                <div className="w-full overflow-hidden">
+                    <div className="flex flex-nowrap gap-10 w-max transition-transform duration-300" style={{transform: `translateX(-${this.state.translateX}px)`}}>
+                        {this.state.games.map(game => (
+                            <SliderItem key={game.id} {...game} />
+                        ))}
+                    </div>
                 </div>
             </section>
         )
