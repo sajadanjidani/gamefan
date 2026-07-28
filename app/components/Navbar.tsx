@@ -2,6 +2,7 @@
 import React from "react"
 import { IoSearch } from "react-icons/io5";
 import { RiMenuSearchLine } from "react-icons/ri";
+import { IoCloseOutline } from "react-icons/io5";
 
 
 export default class Navbar extends React.Component {
@@ -49,7 +50,9 @@ export default class Navbar extends React.Component {
                 </form>
                 {/* hamber Menu */}
                 <div className="sm:hidden block">
-                    <RiMenuSearchLine onClick={this.menuHandler.bind(this)} className="text-blue-400 hover:text-purple-400"/>
+                    {this.state.menuStatus ? (<IoCloseOutline className="text-purple-400" /> ) : (
+                        <RiMenuSearchLine onClick={this.menuHandler.bind(this)} className="text-blue-400 hover:text-purple-400"/>
+                    )}
                     {this.state.menuStatus ? (
                     <div>
                         <div className="absolute left-0 top-0 w-2/3 h-dvh bg-blue-950">
