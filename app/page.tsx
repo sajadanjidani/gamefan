@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <DownloadBox />
+      {/* <Header />
+      <DownloadBox /> */}
     </div>
   );
 }
