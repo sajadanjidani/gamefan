@@ -23,8 +23,8 @@ export default class Header extends React.Component {
                 {/* content */}
                 <div className="h-full md:flex grid">
                     {/* cover */}
-                    <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/6 md:mx-0 mx-auto h-full sm:ml-10 md:flex md:justify-center md:items-center">
-                        <img alt="imageCover" src={'./images/gameCovers/CyberpunkCover.jpg'} className="w-9/10 h-9/10 overflow-hidden rounded-md shadow-2xl shadow-purple-800 mx-auto" />
+                    <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/6 md:mx-0 h-full sm:ml-10 md:flex md:justify-center md:items-center" style={{margin: '0 auto'}}>
+                        <img alt="imageCover" src={'./images/gameCovers/CyberpunkCover.jpg'} className="w-9/10 h-9/10 mx-auto overflow-hidden rounded-md shadow-2xl shadow-purple-800 mx-auto" />
                     </div>
                     {/* info */}
                     <div className="flex justify-center items-center md:w-4/6 w-full h-full sm:mt-0 mt-5 md:**:text-left **:text-center md:**:mx-0 **:mx-auto">
