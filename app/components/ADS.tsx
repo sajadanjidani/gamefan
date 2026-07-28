@@ -41,7 +41,7 @@ export default class ADS extends React.Component {
           {/* bg Image */}
           <img
             alt="backgroundImage"
-            src="./images/ADS/ADSbgImage.jpg"
+            src="./images/ADS/ADSbgImage.webp"
             className="w-full h-full object-fill opacity-10 absolute -z-10 sm:-mt-3"
           />
 
