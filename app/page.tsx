@@ -6,6 +6,7 @@ import DownloadBox from "./components/DownloadBox";
 import Slider from "./components/Slider/Slider"
 import ADS from "./components/ADS";
 
+
 export default function Home() {
   return (
     <div>
