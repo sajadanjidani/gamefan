@@ -8,12 +8,12 @@ export default class ADS extends React.Component {
 
     render(){
         return(
-            <section className="container mx-auto h-85 overflow-hidden rounded-r-4xl bg-linear-90 from-blue-950/20 from-50% to-background flex">
+            <section className="container mx-auto md:h-85 sm:h-200 h-170 overflow-hidden md:rounded-r-4xl bg-linear-90 from-blue-950/20 from-50% to-background flex md:flex-row flex-col-reverse xl:px-0 px-5">
                 {/* image box */}
-                <div className="w-3/10 h-full"></div>
+                <div className="xl:w-3/10 lg:w-4/10 md:w-4/10 w-full sm:h-full h-4/10 "></div>
                 {/* content */}
-                <div className="w-7/10 h-full flex justify-center items-center">
-                    <div className="grid justify-center items-center gap-5 w-9/10">
+                <div className="xl:w-7/10 lg:w-6/10 md:w-6/10 w-full sm:h-full h-6/10 flex justify-center items-center md:**:text-left **:text-center md:**:mx-0 **:mx-auto">
+                    <div className="grid justify-center items-center xl:gap-5 lg:gap-3 sm:gap-5 xl:mt-0 md:-mt-12 sm:mt-0 -mt-10 w-9/10">
                         <h3 className="font-bold text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repellat!</h3>
                         <p className="leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magni dolores qui ut modi vel cupiditate in non explicabo placeat voluptatem eius quas sunt fugit inventore soluta reprehenderit aliquam at repudiandae blanditiis excepturi, facilis aut. Dolorum rem maxime numquam deserunt!</p>
                         <div className="relative md:px-0 px-17">

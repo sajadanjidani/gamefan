@@ -12,18 +12,18 @@ export default class Slider extends React.Component {
 
         this.state = {
             games : [
-                {id : 1 , title : 'Resident Evil' , imageSrc : ''},
-                {id : 2 , title : 'God of War' , imageSrc : ''},
-                {id : 3 , title : 'Spider Man' , imageSrc : ''},
-                {id : 4 , title : 'Elden Ring' , imageSrc : ''},
-                {id : 5 , title : 'Sekiro' , imageSrc : ''},
-                {id : 6 , title : 'The Crafter' , imageSrc : ''},
-                {id : 7 , title : 'GTA San' , imageSrc : ''},
-                {id : 8 , title : 'Call of Duty' , imageSrc : ''},
-                {id : 9 , title : 'GTA V' , imageSrc : ''},
-                {id : 10 , title : 'MineCraft' , imageSrc : ''},
-                {id : 11 , title : 'FortNight' , imageSrc : ''},
-                {id : 12 , title : 'CSgo' , imageSrc : ''},
+                {id : 1 , title : 'Resident Evil' , imageSrc : './images/gameCovers/ResidentEvil.jpg'},
+                {id : 2 , title : 'God of War' , imageSrc : './images/gameCovers/GodofWar.jpg'},
+                {id : 3 , title : 'Spider Man' , imageSrc : './images/gameCovers/Spiderman.jpg'},
+                {id : 4 , title : 'Elden Ring' , imageSrc : './images/gameCovers/EldenRing.jpg'},
+                {id : 5 , title : 'Sekiro' , imageSrc : './images/gameCovers/Sekiro.jpg'},
+                {id : 6 , title : 'The Crafter' , imageSrc : './images/gameCovers/TheCrafter.jpg'},
+                {id : 7 , title : 'GTA San' , imageSrc : './images/gameCovers/GTAsan.jpg'},
+                {id : 8 , title : 'Call of Duty' , imageSrc : './images/gameCovers/CallOfDuty.jpg'},
+                {id : 9 , title : 'GTA V' , imageSrc : './images/gameCovers/GTAV.jpg'},
+                {id : 10 , title : 'MineCraft' , imageSrc : './images/gameCovers/MineCraft.jpg'},
+                {id : 11 , title : 'Fortnite' , imageSrc : './images/gameCovers/Fortnigt.jpg'},
+                {id : 12 , title : 'CSgo' , imageSrc : './images/gameCovers/CSgo.jpg'},
             ]
         }
     }
@@ -43,7 +43,7 @@ export default class Slider extends React.Component {
                     </div>
                 </div>
                 {/* slider side */}
-                <div className="w-full h-full flex gap-10 overflow-hidden flex-nowrap">
+                <div className="w-full h-auto flex gap-10 overflow-x-hidden flex-nowrap">
                     {this.state.games.map(game => <SliderItem key={game.id} {...game}/>)}
                 </div>
             </section>
