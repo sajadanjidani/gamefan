@@ -7,6 +7,16 @@ import { RiMenuSearchLine } from "react-icons/ri";
 export default class Navbar extends React.Component {
     constructor(props){
         super(props)
+
+        this.state = {
+            menuStatus : false
+        }
+    }
+
+    menuHandler = () => {
+        this.setState(prevState => {
+            return {menuStatus : !prevState.menuStatus}
+        })
     }
 
     render(){
@@ -39,8 +49,9 @@ export default class Navbar extends React.Component {
                 </form>
                 {/* hamber Menu */}
                 <div className="sm:hidden block">
-                    <RiMenuSearchLine className="text-blue-400 hover:text-purple-400"/>
-                    <div className="hidden">
+                    <RiMenuSearchLine onClick={this.menuHandler.bind(this)} className="text-blue-400 hover:text-purple-400"/>
+                    {this.state.menuStatus ? (
+                    <div>
                         <div className="absolute left-0 top-0 w-2/3 h-dvh bg-blue-950">
                             <ul className="*:font-semibold *:hover:cursor-pointer *:hover:text-blue-300 ml-3 mt-3 *:mt-3">
                                 <li className="text-blue-300">Home</li>
@@ -55,9 +66,10 @@ export default class Navbar extends React.Component {
                                 <input id="Navbar-input" className="outline-0 ml-3 w-9/10" type="text" placeholder="Search ..."/>
                             </form>
                         </div>
-                        <div className="absolute right-0 top-0 w-1/3 h-dvh bg-blue-900/20"></div>
+                        <div className="absolute right-0 top-0 w-1/3 h-dvh bg-blue-900/20" onClick={this.menuHandler.bind(this)}></div>
                     </div>
-                    </div>
+                    ) : ''}
+                </div>
             </div>
         )
     }
