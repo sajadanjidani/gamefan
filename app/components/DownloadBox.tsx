@@ -22,22 +22,22 @@ export default class DownloadBox extends React.Component<{}, DownloadBoxState> {
         {
           id: 1,
           title: "Windows Games",
-          imageSrc: "./images/categoryLogos/windowsLogo.png",
+          imageSrc: "./images/categoryLogos/windowsLogo.webp",
         },
         {
           id: 2,
           title: "Android Games",
-          imageSrc: "./images/categoryLogos/androidLogo.png",
+          imageSrc: "./images/categoryLogos/androidLogo.webp",
         },
         {
           id: 3,
           title: "PlayStation Games",
-          imageSrc: "./images/categoryLogos/PlayStationLogo.png",
+          imageSrc: "./images/categoryLogos/PlayStationLogo.webp",
         },
         {
           id: 4,
           title: "Xbox Games",
-          imageSrc: "./images/categoryLogos/xboxLogo.png",
+          imageSrc: "./images/categoryLogos/xboxLogo.webp",
         },
       ],
     };
