@@ -8,10 +8,10 @@ export default class DownloadBox extends React.Component {
 
         this.state = {
             DownloadItemInfo : [
-                {id : 1, title : '', imageSrc : ''},
-                {id : 2, title : '', imageSrc : ''},
-                {id : 3, title : '', imageSrc : ''},
-                {id : 4, title : '', imageSrc : ''},
+                {id : 1, title : 'Windows Games', imageSrc : './images/categoryLogos/windowsLogo.png'},
+                {id : 4, title : 'Android  Games', imageSrc : './images/categoryLogos/androidLogo.png'},
+                {id : 3, title : 'PlayStation Games', imageSrc : './images/categoryLogos/PlayStationLogo.png'},
+                {id : 4, title : 'Xbox Games', imageSrc : './images/categoryLogos/xboxLogo.png'},
             ]
         }
     }
