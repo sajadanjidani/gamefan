@@ -30,7 +30,7 @@ export default class Slider extends React.Component {
 
     render(){
         return(
-            <section className="container mx-auto h-60 mb-30">
+            <section className="container xl:px-0 px-5 mx-auto h-60 mb-30">
                 {/* top side */}
                 <div className="w-full h-20 flex justify-between items-center">
                     <h3 className="text-2xl font-bold">{this.props.catrgoryTitle}</h3>
