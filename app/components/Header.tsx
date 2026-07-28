@@ -32,7 +32,7 @@ export default class Header extends React.Component<{}, HeaderState> {
         {/* bgImage */}
         <img
           alt="backgroundImage"
-          src="./images/bgHeader.jpg"
+          src="./images/bgHeader.webp"
           className="w-full h-full object-fill opacity-10 absolute -z-10 sm:-mt-3"
         />
 
