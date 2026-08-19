@@ -2,6 +2,8 @@
 
 **GameFan** is a modern game download website built with **React** and **Tailwind CSS**. The project focuses on delivering a clean, responsive, and user-friendly interface where users can easily discover and explore their favorite PC games.
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GameFan-purple?style=for-the-badge)](https://sajadanjidani.github.io/gamefan/)
+
 ## ✨ Features
 
 - 🎨 Modern and responsive UI
